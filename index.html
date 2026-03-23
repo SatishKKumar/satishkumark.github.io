@@ -3,89 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Satish Kumar K - Data Scientist Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <style>
+        /* Global styles */
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2ecc71;
+            --background-color: rgba(255, 255, 255, 0.8);
+            --glass-background: rgba(255, 255, 255, 0.2);
+            --text-color: #333;
+            --font-family: 'Arial', sans-serif;
+        }
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: var(--font-family);
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background: var(--background-color);
+            color: var(--text-color);
+            overflow-x: hidden;
         }
-        header {
-            background: #333;
-            color: #fff;
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+
+        /* Sticky Navigation */
+        nav {
+            position: sticky;
+            top: 0;
+            background: var(--glass-background);
+            backdrop-filter: blur(10px);
+            padding: 10px;
+            z-index: 1000;
         }
+
         nav ul {
             list-style: none;
             padding: 0;
             display: flex;
         }
+
         nav ul li {
             margin: 0 15px;
         }
+
         nav a {
-            color: white;
             text-decoration: none;
-            font-weight: bold;
+            color: var(--primary-color);
+            transition: color 0.3s ease;
         }
+
         nav a:hover {
-            text-decoration: underline;
+            color: var(--secondary-color);
         }
-        .container {
+
+        /* Main content */
+        main {
             padding: 20px;
-            max-width: 800px;
-            margin: auto;
         }
-        h1, h2, h3 {
-            margin: 10px 0;
+
+        section {
+            margin: 40px 0;
+            padding: 20px;
+            background: var(--glass-background);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
+
+        /* Responsive design */
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+            }
+        }
+
     </style>
 </head>
 <body>
-    <header>
-        <h1>My Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="container">
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
         <section id="about">
-            <h2>About Me</h2>
-            <p>Welcome to my portfolio! I am a web developer with a passion for creating beautiful and functional websites.</p>
+            <h1>Welcome to My Portfolio</h1>
+            <p>Hi, I'm Satish Kumar K, a Data Scientist.</p>
         </section>
         <section id="projects">
-            <h2>My Projects</h2>
-            <h3>Project 1</h3>
-            <p>Description of project 1.</p>
-            <h3>Project 2</h3>
-            <p>Description of project 2.</p>
+            <h2>Projects</h2>
+            <p>Here are some of my projects...</p>
         </section>
         <section id="contact">
             <h2>Contact Me</h2>
-            <p>Email: example@email.com</p>
+            <p>Email: satishkumar@gmail.com</p>
         </section>
-    </div>
-
-    <script>
-        // Add smooth scroll for navigation
-        const navLinks = document.querySelectorAll('nav a');
-        navLinks.forEach(link => {
-            link.addEventListener('click', (e) => {
-                e.preventDefault();
-                const targetId = link.getAttribute('href');
-                const targetSection = document.querySelector(targetId);
-                targetSection.scrollIntoView({ behavior: 'smooth' });
-            });
-        });
-    </script>
+    </main>
 </body>
 </html>
