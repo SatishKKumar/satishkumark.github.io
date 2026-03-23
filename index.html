@@ -6,107 +6,145 @@
 <title>Satish Kumar K | Data Scientist</title>
 
 <style>
-    body {
-        margin: 0;
-        font-family: 'Segoe UI', sans-serif;
-        background: linear-gradient(120deg, #1f2c3d, #3a6073);
-        color: white;
-    }
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(120deg, #1f2c3d, #3a6073);
+    color: white;
+}
 
-    html {
-        scroll-behavior: smooth;
-    }
+html {
+    scroll-behavior: smooth;
+}
 
-    header {
-        text-align: center;
-        padding: 80px 20px;
-    }
+/* HERO */
+header {
+    text-align: center;
+    padding: 100px 20px;
+}
 
-    header h1 {
-        font-size: 48px;
-        margin: 0;
-    }
+header h1 {
+    font-size: 52px;
+    margin: 0;
+}
 
-    header p {
-        font-size: 20px;
-        opacity: 0.85;
-    }
+.highlight {
+    background: linear-gradient(90deg, #00c6ff, #00ffcc);
+    -webkit-background-clip: text;
+    color: transparent;
+}
 
-    .btn {
-        display: inline-block;
-        margin-top: 20px;
-        padding: 12px 20px;
-        background: #00c6ff;
-        color: black;
-        border-radius: 8px;
-        text-decoration: none;
-        font-weight: bold;
-    }
+header p {
+    font-size: 20px;
+    opacity: 0.9;
+    margin-top: 10px;
+}
 
-    section {
-        max-width: 1100px;
-        margin: auto;
-        padding: 50px 20px;
-    }
+.subtext {
+    max-width: 700px;
+    margin: 20px auto;
+    opacity: 0.8;
+    line-height: 1.6;
+}
 
-    h2 {
-        margin-bottom: 20px;
-    }
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 20px;
+    background: #00c6ff;
+    color: black;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-    .glass {
-        background: rgba(255, 255, 255, 0.08);
-        backdrop-filter: blur(10px);
-        padding: 25px;
-        border-radius: 15px;
-        margin-bottom: 20px;
-        transition: transform 0.3s;
-    }
+.btn.secondary {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+}
 
-    .glass:hover {
-        transform: translateY(-8px);
-    }
+section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 50px 20px;
+}
 
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 20px;
-    }
+h2 {
+    margin-bottom: 20px;
+}
 
-    .tag {
-        display: inline-block;
-        background: rgba(255,255,255,0.2);
-        padding: 6px 10px;
-        margin: 5px;
-        border-radius: 20px;
-        font-size: 12px;
-    }
+/* GLASS CARDS */
+.glass {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
 
-    footer {
-        text-align: center;
-        padding: 20px;
-        opacity: 0.7;
-    }
+.glass:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.tag {
+    display: inline-block;
+    background: rgba(255,255,255,0.2);
+    padding: 6px 10px;
+    margin: 5px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+/* CASE STUDY */
+.case {
+    border-left: 4px solid #00c6ff;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    opacity: 0.7;
+}
 </style>
 </head>
 
 <body>
 
 <header>
-    <h1>Satish K</h1>
-    <p>Senior Analyst @ LatentView Analytics | ML | Time Series | GenAI</p>
-    <a class="btn" href="#projects">View My Work</a>
+    <h1>Satish Kumar K</h1>
+    <p class="highlight">Senior Analyst | Data Scientist | GenAI</p>
+
+    <p class="subtext">
+        I build production-grade machine learning systems that solve real business problems —
+        from predictive maintenance to marketing optimization and NLP automation.
+    </p>
+
+    <a class="btn" href="#projects">View Work</a>
+    <a class="btn secondary" href="SATISH KUMAR K.pdf" download>Download Resume</a>
 </header>
 
 <section>
+
+    <!-- ABOUT -->
     <h2>🚀 About Me</h2>
     <div class="glass">
         <p>
-            Data Scientist with 5+ years of experience building scalable ML solutions.
-            Specialized in time series forecasting, media mix modeling, and NLP.
-            I focus on solving real-world business problems using data.
+            Data Scientist with 5+ years of experience delivering scalable ML solutions across
+            predictive analytics, time series, and NLP.
+            Strong focus on building systems that drive measurable business impact.
         </p>
     </div>
 
+    <!-- SKILLS -->
     <h2>🛠 Skills</h2>
     <div class="glass">
         <span class="tag">Python</span>
@@ -119,57 +157,68 @@
         <span class="tag">Azure</span>
     </div>
 
+    <!-- EXPERIENCE -->
     <h2>💼 Experience</h2>
+
     <div class="glass">
         <h3>LatentView Analytics</h3>
-        <p>
-            Built ML models for battery failure prediction and media mix optimization.
-        </p>
         <ul>
-            <li>Predicted failures 30 days in advance</li>
-            <li>Built scalable pipelines using PySpark & MLflow</li>
-            <li>Improved model performance through feature engineering</li>
+            <li>Built battery failure prediction models (30-day early detection)</li>
+            <li>Developed scalable ML pipelines using PySpark & MLflow</li>
+            <li>Improved model performance through advanced feature engineering</li>
         </ul>
     </div>
 
     <div class="glass">
         <h3>NielsenIQ</h3>
-        <p>
-            Developed event effectiveness models and improved campaign performance.
-        </p>
         <ul>
-            <li>50% improvement in campaign performance</li>
-            <li>150% increase in business impact</li>
+            <li>Improved campaign performance by 50% using MMM techniques</li>
+            <li>Delivered 150% increase in business impact via analytics insights</li>
         </ul>
     </div>
 
+    <!-- CASE STUDY -->
+    <h2>🔥 Case Study</h2>
+
+    <div class="glass case">
+        <h3>Battery Failure Prediction</h3>
+        <p><b>Problem:</b> Unexpected device failures affecting user experience.</p>
+        <p><b>Solution:</b> Built ML + rule-based model using telemetry data.</p>
+        <p><b>Impact:</b></p>
+        <ul>
+            <li>Enabled proactive maintenance</li>
+            <li>Reduced failure incidents</li>
+            <li>Improved customer experience</li>
+        </ul>
+    </div>
+
+    <!-- PROJECTS -->
     <h2 id="projects">📊 Projects</h2>
 
     <div class="grid">
 
         <div class="glass">
             <h3>🔋 Battery Failure Prediction</h3>
-            <p>ML + rule-based system to predict failures 30 days in advance.</p>
+            <p>ML system predicting failures 30 days in advance.</p>
         </div>
 
         <div class="glass">
             <h3>📊 Media Mix Modeling</h3>
-            <p>Optimized marketing ROI using regression and time series models.</p>
+            <p>Optimized marketing ROI using regression + time series.</p>
         </div>
 
         <div class="glass">
             <h3>🧠 NLP Product Mapping</h3>
-            <p>Used BERT to map product hierarchy across datasets.</p>
+            <p>Used BERT for product hierarchy mapping.</p>
         </div>
 
     </div>
 
+    <!-- CONTACT -->
     <h2>📬 Contact</h2>
     <div class="glass">
         <p>Email: satish9901744@gmail.com</p>
         <p>GitHub: https://github.com/SatishKKumar</p>
-        <!-- <a class="btn" href="#">Download Resume</a> -->
-        <a class="btn" href="SATISH KUMAR K.pdf" download>Download Resume</a>
     </div>
 
 </section>
@@ -179,23 +228,22 @@
 </footer>
 
 <script>
-    // simple fade-in animation
-    const cards = document.querySelectorAll('.glass');
+const cards = document.querySelectorAll('.glass');
 
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.opacity = 1;
-                entry.target.style.transform = "translateY(0)";
-            }
-        });
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = 1;
+            entry.target.style.transform = "translateY(0)";
+        }
     });
+});
 
-    cards.forEach(card => {
-        card.style.opacity = 0;
-        card.style.transform = "translateY(20px)";
-        observer.observe(card);
-    });
+cards.forEach(card => {
+    card.style.opacity = 0;
+    card.style.transform = "translateY(20px)";
+    observer.observe(card);
+});
 </script>
 
 </body>
