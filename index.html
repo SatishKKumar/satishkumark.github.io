@@ -1,186 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Satish K | Data Scientist</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Satish Kumar K | Data Scientist</title>
 
-    <style>
-        body {
-            font-family: 'Segoe UI', sans-serif;
-            margin: 0;
-            background: #f4f6f9;
-            color: #333;
-        }
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background: linear-gradient(120deg, #1f2c3d, #3a6073);
+        color: white;
+    }
 
-        header {
-            background: linear-gradient(135deg, #2c3e50, #34495e);
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-        }
+    html {
+        scroll-behavior: smooth;
+    }
 
-        header h1 {
-            margin: 0;
-            font-size: 36px;
-        }
+    header {
+        text-align: center;
+        padding: 80px 20px;
+    }
 
-        header p {
-            margin-top: 10px;
-            font-size: 18px;
-            opacity: 0.9;
-        }
+    header h1 {
+        font-size: 48px;
+        margin: 0;
+    }
 
-        section {
-            max-width: 1000px;
-            margin: auto;
-            padding: 30px 20px;
-        }
+    header p {
+        font-size: 20px;
+        opacity: 0.85;
+    }
 
-        h2 {
-            border-left: 5px solid #2c3e50;
-            padding-left: 10px;
-            color: #2c3e50;
-        }
+    .btn {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 12px 20px;
+        background: #00c6ff;
+        color: black;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+    }
 
-        .card {
-            background: white;
-            padding: 20px;
-            margin: 15px 0;
-            border-radius: 12px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-        }
+    section {
+        max-width: 1100px;
+        margin: auto;
+        padding: 50px 20px;
+    }
 
-        .tag {
-            display: inline-block;
-            background: #e3ecf5;
-            padding: 5px 10px;
-            margin: 5px;
-            border-radius: 6px;
-            font-size: 12px;
-        }
+    h2 {
+        margin-bottom: 20px;
+    }
 
-        .project-title {
-            font-weight: bold;
-            font-size: 18px;
-        }
+    .glass {
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(10px);
+        padding: 25px;
+        border-radius: 15px;
+        margin-bottom: 20px;
+        transition: transform 0.3s;
+    }
 
-        .contact a {
-            text-decoration: none;
-            color: #2c3e50;
-        }
+    .glass:hover {
+        transform: translateY(-8px);
+    }
 
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #2c3e50;
-            color: white;
-        }
-    </style>
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
+
+    .tag {
+        display: inline-block;
+        background: rgba(255,255,255,0.2);
+        padding: 6px 10px;
+        margin: 5px;
+        border-radius: 20px;
+        font-size: 12px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        opacity: 0.7;
+    }
+</style>
 </head>
 
 <body>
 
 <header>
     <h1>Satish K</h1>
-    <p>Senior Data Scientist | Machine Learning | Time Series | GenAI</p>
+    <p>Senior Analyst @ LatentView Analytics | ML | Time Series | GenAI</p>
+    <a class="btn" href="#projects">View My Work</a>
 </header>
 
 <section>
-
-    <h2>About Me</h2>
-    <div class="card">
+    <h2>🚀 About Me</h2>
+    <div class="glass">
         <p>
-            Data Scientist with 5+ years of experience in predictive analytics, machine learning, 
-            and statistical modeling. Specialized in time series forecasting, media mix modeling, 
-            and NLP-based solutions. Proven track record of improving business performance through 
-            data-driven decision making.
+            Data Scientist with 5+ years of experience building scalable ML solutions.
+            Specialized in time series forecasting, media mix modeling, and NLP.
+            I focus on solving real-world business problems using data.
         </p>
     </div>
 
-    <h2>Skills</h2>
-    <div class="card">
+    <h2>🛠 Skills</h2>
+    <div class="glass">
         <span class="tag">Python</span>
         <span class="tag">PySpark</span>
-        <span class="tag">Machine Learning</span>
+        <span class="tag">MLflow</span>
+        <span class="tag">TensorFlow</span>
         <span class="tag">Time Series</span>
         <span class="tag">NLP</span>
-        <span class="tag">TensorFlow</span>
-        <span class="tag">MLflow</span>
         <span class="tag">Power BI</span>
         <span class="tag">Azure</span>
-        <span class="tag">Databricks</span>
     </div>
 
-    <h2>Work Experience</h2>
-
-    <div class="card">
-        <div class="project-title">Senior Data Scientist – Beinex</div>
+    <h2>💼 Experience</h2>
+    <div class="glass">
+        <h3>LatentView Analytics</h3>
         <p>
-            Built risk measurement models for UAE government initiative, analyzing economic 
-            and consumption patterns using advanced ML techniques.
+            Built ML models for battery failure prediction and media mix optimization.
         </p>
+        <ul>
+            <li>Predicted failures 30 days in advance</li>
+            <li>Built scalable pipelines using PySpark & MLflow</li>
+            <li>Improved model performance through feature engineering</li>
+        </ul>
     </div>
 
-    <div class="card">
-        <div class="project-title">Data Scientist – NielsenIQ</div>
+    <div class="glass">
+        <h3>NielsenIQ</h3>
         <p>
-            Developed event effectiveness modeling tool using A/B testing and regression models. 
-            Improved campaign performance by 50% and increased business impact by 150%.
+            Developed event effectiveness models and improved campaign performance.
         </p>
+        <ul>
+            <li>50% improvement in campaign performance</li>
+            <li>150% increase in business impact</li>
+        </ul>
     </div>
 
-    <div class="card">
-        <div class="project-title">Associate Data Scientist – NielsenIQ</div>
-        <p>
-            Built automation tools using Google Apps Script and developed NLP-based product 
-            harmonization using BERT and PySpark on Azure Databricks.
-        </p>
+    <h2 id="projects">📊 Projects</h2>
+
+    <div class="grid">
+
+        <div class="glass">
+            <h3>🔋 Battery Failure Prediction</h3>
+            <p>ML + rule-based system to predict failures 30 days in advance.</p>
+        </div>
+
+        <div class="glass">
+            <h3>📊 Media Mix Modeling</h3>
+            <p>Optimized marketing ROI using regression and time series models.</p>
+        </div>
+
+        <div class="glass">
+            <h3>🧠 NLP Product Mapping</h3>
+            <p>Used BERT to map product hierarchy across datasets.</p>
+        </div>
+
     </div>
 
-    <h2>Key Projects</h2>
-
-    <div class="card">
-        <div class="project-title">🔋 Battery Failure Prediction</div>
-        <p>
-            Developed ML + rule-based system to predict battery failures 30 days in advance 
-            using time series and classification models.
-        </p>
-    </div>
-
-    <div class="card">
-        <div class="project-title">📊 Media Mix Modeling</div>
-        <p>
-            Built regression-based models to optimize marketing spend and improve ROI 
-            using trend and seasonality decomposition.
-        </p>
-    </div>
-
-    <div class="card">
-        <div class="project-title">🧠 Product Harmonization (NLP)</div>
-        <p>
-            Designed NLP pipeline using BERT to map product hierarchies across datasets 
-            with high accuracy using embeddings and similarity matching.
-        </p>
-    </div>
-
-    <h2>Education</h2>
-    <div class="card">
-        <p><b>M.Sc. Big Data Analytics</b> – St. Joseph's College, Bangalore</p>
-        <p><b>B.Sc. Physics, Mathematics, Chemistry</b> – St. Joseph's College</p>
-    </div>
-
-    <h2>Contact</h2>
-    <div class="card contact">
-        <p>Email: Satish9901744@gmail.com</p>
-        <p>GitHub: <a href="https://github.com/SatishKKumar" target="_blank">github.com/SatishKKumar</a></p>
+    <h2>📬 Contact</h2>
+    <div class="glass">
+        <p>Email: satish9901744@gmail.com</p>
+        <p>GitHub: https://github.com/SatishKKumar</p>
+        <a class="btn" href="#">Download Resume</a>
     </div>
 
 </section>
 
 <footer>
-    <p>© 2026 Satish K | Portfolio</p>
+    <p>© 2026 Satish K</p>
 </footer>
+
+<script>
+    // simple fade-in animation
+    const cards = document.querySelectorAll('.glass');
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = 1;
+                entry.target.style.transform = "translateY(0)";
+            }
+        });
+    });
+
+    cards.forEach(card => {
+        card.style.opacity = 0;
+        card.style.transform = "translateY(20px)";
+        observer.observe(card);
+    });
+</script>
 
 </body>
 </html>
