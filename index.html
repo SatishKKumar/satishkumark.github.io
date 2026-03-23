@@ -4,116 +4,144 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Satish Kumar K | Data Scientist</title>
+<meta name="description" content="Satish Kumar K – Senior Analyst & Data Scientist. Expertise in ML, Time Series, NLP, and GenAI. Portfolio showcasing projects and skills.">
+
+<!-- Fonts & Styles -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
-body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(120deg, #1f2c3d, #3a6073);
-    color: white;
-}
+    :root {
+        --primary: #00c6ff;
+        --bg-dark: #1f2c3d;
+        --card-bg: rgba(255, 255, 255, 0.08);
+        --text-light: #ffffff;
+        --text-muted: rgba(255, 255, 255, 0.7);
+        --accent: #22c55e;
+    }
 
-html {
-    scroll-behavior: smooth;
-}
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
 
-/* HERO */
-header {
-    text-align: center;
-    padding: 100px 20px;
-}
+    body {
+        font-family: 'Inter', sans-serif;
+        background: linear-gradient(120deg, #1f2c3d, #3a6073);
+        color: var(--text-light);
+        scroll-behavior: smooth;
+    }
 
-header h1 {
-    font-size: 52px;
-    margin: 0;
-}
+    a {
+        text-decoration: none;
+    }
 
-.highlight {
-    background: linear-gradient(90deg, #00c6ff, #00ffcc);
-    -webkit-background-clip: text;
-    color: transparent;
-}
+    header {
+        text-align: center;
+        padding: 100px 20px 60px;
+    }
 
-header p {
-    font-size: 20px;
-    opacity: 0.9;
-    margin-top: 10px;
-}
+    header h1 {
+        font-size: 60px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
 
-.subtext {
-    max-width: 700px;
-    margin: 20px auto;
-    opacity: 0.8;
-    line-height: 1.6;
-}
+    header p {
+        font-size: 20px;
+        opacity: 0.85;
+    }
 
-.btn {
-    display: inline-block;
-    margin: 10px;
-    padding: 12px 20px;
-    background: #00c6ff;
-    color: black;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-}
+    .btn {
+        display: inline-block;
+        margin: 20px 10px 0;
+        padding: 12px 25px;
+        font-weight: 600;
+        border-radius: 8px;
+        transition: transform 0.2s;
+        cursor: pointer;
+    }
 
-.btn.secondary {
-    background: transparent;
-    border: 1px solid white;
-    color: white;
-}
+    .btn-primary {
+        background: var(--primary);
+        color: black;
+    }
 
-section {
-    max-width: 1100px;
-    margin: auto;
-    padding: 50px 20px;
-}
+    .btn-primary:hover {
+        transform: translateY(-3px);
+    }
 
-h2 {
-    margin-bottom: 20px;
-}
+    .btn-outline {
+        background: transparent;
+        border: 2px solid var(--primary);
+        color: var(--primary);
+    }
 
-/* GLASS CARDS */
-.glass {
-    background: rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(10px);
-    padding: 25px;
-    border-radius: 15px;
-    margin-bottom: 20px;
-    transition: all 0.3s ease;
-}
+    .btn-outline:hover {
+        transform: translateY(-3px);
+        background: var(--primary);
+        color: black;
+    }
 
-.glass:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-}
+    section {
+        max-width: 1100px;
+        margin: auto;
+        padding: 60px 20px;
+    }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-}
+    h2 {
+        font-size: 32px;
+        margin-bottom: 25px;
+        text-align: center;
+    }
 
-.tag {
-    display: inline-block;
-    background: rgba(255,255,255,0.2);
-    padding: 6px 10px;
-    margin: 5px;
-    border-radius: 20px;
-    font-size: 12px;
-}
+    .glass {
+        background: var(--card-bg);
+        backdrop-filter: blur(10px);
+        padding: 25px;
+        border-radius: 15px;
+        margin-bottom: 20px;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
 
-/* CASE STUDY */
-.case {
-    border-left: 4px solid #00c6ff;
-}
+    .glass:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    opacity: 0.7;
-}
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 25px;
+    }
+
+    .tag {
+        display: inline-block;
+        background: rgba(255,255,255,0.2);
+        padding: 6px 12px;
+        margin: 5px 5px 0 0;
+        border-radius: 20px;
+        font-size: 13px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 30px 20px;
+        opacity: 0.7;
+        font-size: 14px;
+    }
+
+    /* Fade-in animation for cards */
+    .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .fade-in.show {
+        opacity: 1;
+        transform: translateY(0);
+    }
 </style>
 </head>
 
@@ -121,32 +149,23 @@ footer {
 
 <header>
     <h1>Satish K</h1>
-    <p class="highlight">Senior Data Scientist | ML Systems | GenAI</p>
-
-    <p class="subtext">
-        I build production-grade machine learning systems that solve real business problems —
-        from predictive maintenance to marketing optimization and NLP automation.
-    </p>
-
-    <a class="btn" href="#projects">View Work</a>
-    <a class="btn secondary" href="SATISH KUMAR K.pdf" download>Download Resume</a>
+    <p>Senior Analyst @ LatentView Analytics | ML | Time Series | NLP | GenAI</p>
+    <a class="btn btn-primary" href="#projects">View My Work</a>
+    <a class="btn btn-outline" href="mailto:satish9901744@gmail.com">Send Me a Message</a>
 </header>
 
 <section>
-
-    <!-- ABOUT -->
     <h2>🚀 About Me</h2>
-    <div class="glass">
+    <div class="glass fade-in">
         <p>
-            Data Scientist with 5+ years of experience delivering scalable ML solutions across
-            predictive analytics, time series, and NLP.
-            Strong focus on building systems that drive measurable business impact.
+            Data Scientist with 5+ years of experience building scalable ML solutions.
+            Specialized in time series forecasting, media mix modeling, and NLP.
+            I focus on solving real-world business problems using data and delivering measurable business impact.
         </p>
     </div>
 
-    <!-- SKILLS -->
     <h2>🛠 Skills</h2>
-    <div class="glass">
+    <div class="glass fade-in">
         <span class="tag">Python</span>
         <span class="tag">PySpark</span>
         <span class="tag">MLflow</span>
@@ -157,70 +176,109 @@ footer {
         <span class="tag">Azure</span>
     </div>
 
-    <!-- EXPERIENCE -->
     <h2>💼 Experience</h2>
-
-    <div class="glass">
+    <div class="glass fade-in">
         <h3>LatentView Analytics</h3>
+        <p>
+            Built ML models for battery failure prediction and media mix optimization.
+        </p>
         <ul>
-            <li>Built battery failure prediction models (30-day early detection)</li>
-            <li>Developed scalable ML pipelines using PySpark & MLflow</li>
-            <li>Improved model performance through advanced feature engineering</li>
+            <li>Predicted failures 30 days in advance, reducing downtime for enterprise clients.</li>
+            <li>Built scalable pipelines using PySpark & MLflow.</li>
+            <li>Improved model performance through feature engineering and hyperparameter tuning.</li>
         </ul>
     </div>
 
-    <div class="glass">
+    <div class="glass fade-in">
         <h3>NielsenIQ</h3>
+        <p>
+            Developed event effectiveness models and improved campaign performance.
+        </p>
         <ul>
-            <li>Improved campaign performance by 50% using MMM techniques</li>
-            <li>Delivered 150% increase in business impact via analytics insights</li>
+            <li>50% improvement in campaign performance metrics.</li>
+            <li>150% increase in measurable business impact through data-driven insights.</li>
         </ul>
     </div>
 
-    <!-- CASE STUDY -->
-    <h2>🔥 Case Study</h2>
+</section>
 
-    <div class="glass case">
-        <h3>Battery Failure Prediction</h3>
-        <p><b>Problem:</b> Unexpected device failures affecting user experience.</p>
-        <p><b>Solution:</b> Built ML + rule-based model using telemetry data.</p>
-        <p><b>Impact:</b></p>
-        <ul>
-            <li>Enabled proactive maintenance</li>
-            <li>Reduced failure incidents</li>
-            <li>Improved customer experience</li>
-        </ul>
-    </div>
-
-    <!-- PROJECTS -->
-    <h2 id="projects">📊 Projects</h2>
+<section id="projects">
+    <h2>📊 Projects</h2>
 
     <div class="grid">
 
-        <div class="glass">
+        <div class="glass fade-in">
             <h3>🔋 Battery Failure Prediction</h3>
-            <p>ML system predicting failures 30 days in advance.</p>
+            <p>
+                Developed a predictive ML + rule-based system to forecast laptop and battery failures 30 days in advance. 
+                Helped reduce unexpected hardware downtime for enterprise clients.
+            </p>
+            <ul>
+                <li>Used PySpark for scalable preprocessing and feature engineering.</li>
+                <li>Random Forest & logistic regression models with 80%+ accuracy.</li>
+                <li>Integrated rule-based checks to handle edge cases and improve reliability.</li>
+            </ul>
         </div>
 
-        <div class="glass">
+        <div class="glass fade-in">
             <h3>📊 Media Mix Modeling</h3>
-            <p>Optimized marketing ROI using regression + time series.</p>
+            <p>
+                Optimized marketing spend across channels (Meta, YouTube, TikTok) to maximize ROI using regression and statistical modeling.
+            </p>
+            <ul>
+                <li>Multi-channel media mix models with ridge regression.</li>
+                <li>Extracted seasonality & trend using FB Prophet.</li>
+                <li>Increased campaign efficiency by 50% and business impact by 150%.</li>
+            </ul>
         </div>
 
-        <div class="glass">
+        <div class="glass fade-in">
             <h3>🧠 NLP Product Mapping</h3>
-            <p>Used BERT for product hierarchy mapping.</p>
+            <p>
+                Developed a BERT-based NLP system to map FMCG product names to standardized hierarchy across multiple client datasets.
+            </p>
+            <ul>
+                <li>Handled noisy, dynamic product names using contextual embeddings.</li>
+                <li>Reduced manual mapping effort by 70% for product categorization teams.</li>
+                <li>Implemented fuzzy matching & hierarchical mapping for multi-client support.</li>
+            </ul>
+        </div>
+
+        <div class="glass fade-in">
+            <h3>🔧 Laptop Battery Health Dashboard</h3>
+            <p>
+                Built an interactive Power BI dashboard to monitor battery health metrics (FCC, RCC, voltage, temperature) for thousands of devices.
+            </p>
+            <ul>
+                <li>Visualized failure trends to prioritize proactive maintenance.</li>
+                <li>Enabled data-driven decision making for IT operations.</li>
+                <li>Integrated with ML predictions to highlight high-risk devices.</li>
+            </ul>
+        </div>
+
+        <div class="glass fade-in">
+            <h3>📈 Customer Retention Analytics</h3>
+            <p>
+                Developed models to quantify media spend impact on returning customers for a banking application.
+            </p>
+            <ul>
+                <li>Analyzed FX rates, transaction fees, and marketing channels for optimization.</li>
+                <li>Built a pipeline combining feature engineering and predictive modeling.</li>
+                <li>Recommended actionable budget allocation to improve customer retention.</li>
+            </ul>
         </div>
 
     </div>
+</section>
 
-    <!-- CONTACT -->
+<section>
     <h2>📬 Contact</h2>
-    <div class="glass">
-        <p>Email: satish9901744@gmail.com</p>
-        <p>GitHub: https://github.com/SatishKKumar</p>
+    <div class="glass fade-in">
+        <p>Email: <a href="mailto:satish9901744@gmail.com" style="color: var(--primary);">satish9901744@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/SatishKKumar" target="_blank" style="color: var(--primary);">github.com/SatishKKumar</a></p>
+        <p><a class="btn btn-primary" href="SATISH KUMAR K.pdf" download>Download Resume</a></p>
+        <p><a class="btn btn-outline" href="mailto:satish9901744@gmail.com">Send Me a Message</a></p>
     </div>
-
 </section>
 
 <footer>
@@ -228,22 +286,17 @@ footer {
 </footer>
 
 <script>
-const cards = document.querySelectorAll('.glass');
+    // fade-in animation for all cards
+    const fadeElements = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting) {
+                entry.target.classList.add('show');
+            }
+        });
+    }, { threshold: 0.1 });
 
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.opacity = 1;
-            entry.target.style.transform = "translateY(0)";
-        }
-    });
-});
-
-cards.forEach(card => {
-    card.style.opacity = 0;
-    card.style.transform = "translateY(20px)";
-    observer.observe(card);
-});
+    fadeElements.forEach(el => observer.observe(el));
 </script>
 
 </body>
